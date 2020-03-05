@@ -1,5 +1,5 @@
 .header {
-    height: 160px;
+    height: 170px;
     background: rgb(78,65,57);
     background: linear-gradient(90deg, rgba(78,65,57,1) 0%, rgba(27,26,28,1) 100%);
 }
@@ -7,27 +7,20 @@
 .header__wrap {
     display: flex;
     justify-content: space-between;
-    max-height: 160px;
-    padding-top: 65px;
-}
-
-.header__logo {
-    max-width: 190px;
-    padding: 2px;
+    align-items: center;
+    height: 170px;
 }
 
 .header__logo-link {
     display: flex;
     flex-direction: column;
     text-align: center;
-    height: 60px;
 }
 
 .header__logo-title {
     font-size: 32px ;
     color: $beige;
     display: inline-block;
-    padding-bottom: 2px;
     height: 25px;
     line-height: 0.3;
     letter-spacing: 0.05em;
@@ -46,7 +39,6 @@
 
 .heder__nav-list {
     display: flex;
-    padding-top: 8px;
 }
 
 .header__nav-item {
