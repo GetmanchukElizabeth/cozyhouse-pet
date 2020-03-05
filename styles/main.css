@@ -432,7 +432,7 @@ a {
 }
 
 .header {
-  height: 160px;
+  height: 170px;
   background: #4e4139;
   background: linear-gradient(90deg, #4e4139 0%, #1b1a1c 100%);
 }
@@ -440,27 +440,20 @@ a {
 .header__wrap {
   display: flex;
   justify-content: space-between;
-  max-height: 160px;
-  padding-top: 65px;
-}
-
-.header__logo {
-  max-width: 190px;
-  padding: 2px;
+  align-items: center;
+  height: 170px;
 }
 
 .header__logo-link {
   display: flex;
   flex-direction: column;
   text-align: center;
-  height: 60px;
 }
 
 .header__logo-title {
   font-size: 32px;
   color: #f1cdb3;
   display: inline-block;
-  padding-bottom: 2px;
   height: 25px;
   line-height: 0.3;
   letter-spacing: 0.05em;
@@ -479,7 +472,6 @@ a {
 
 .heder__nav-list {
   display: flex;
-  padding-top: 8px;
 }
 
 .header__nav-item {
