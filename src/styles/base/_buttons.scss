@@ -1,0 +1,106 @@
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: 2px solid $beige;
+    border-radius: 30px;
+    height: 52px;
+    font-size: 17px;
+    line-height: 1.2;
+    font-family: $main-font;
+    letter-spacing: 1.2px;
+    background-color: $beige;
+    text-align: center;
+    padding: 0 20px;
+    color: $black;
+    cursor: pointer;
+    @include trs;
+
+    &:hover {
+        background-color: transparent;
+        color: $beige;
+
+    }
+
+    &--border {
+        background-color: transparent;
+
+        &:hover {
+            background-color: $beige;
+            color: $main-color;
+        }
+    }
+}
+
+.btn-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border: 2px solid $beige;
+    border-radius: 30px;
+    height: 52px;
+    font-size: 17px;
+    line-height: 1.2;
+    font-family: $main-font;
+    letter-spacing: 1.2px;
+    background-color: $beige;
+    text-align: center;
+    padding: 0 20px;
+    color: $black;
+    cursor: pointer;
+    @include trs;
+
+    &:hover {
+        background-color: transparent;
+        color: $beige;
+
+    }
+
+    &--border {
+        background-color: transparent;
+
+        &:hover {
+            background-color: $beige;
+            color: $main-color;
+        }
+    }
+}
+
+.btn-rowright {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 52px;
+    height: 52px;
+    border: 2px solid $beige;
+    border-radius: 30px;
+    height: 52px;
+    font-size: 17px;
+    line-height: 1.2;
+    font-family: $main-font;
+    letter-spacing: 1.2px;
+    background-color: $beige;
+    text-align: center;
+    padding: 0 20px;
+    color: $black;
+    cursor: pointer;
+    @include trs;
+    
+    &:hover {
+        background-color: transparent;
+        color: $beige;
+
+    }
+    
+    &--border {
+        background-color: transparent;
+
+        &:hover {
+            background-color: $beige;
+            color: $main-color;
+        }
+    }
+}

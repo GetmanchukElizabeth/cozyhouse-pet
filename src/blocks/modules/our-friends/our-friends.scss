@@ -1,0 +1,79 @@
+.our-friends {
+    background-color: #f6f6f6;
+    padding: 70px 0;
+
+    &__caption {
+        text-align: center;
+        margin-bottom: 60px;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    &__wrap {
+        margin-bottom: 60px;
+        width: 1170px;
+        height: 430px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__btn {
+        width: 265px;
+        margin: 0 auto;
+    }
+
+    &__btn a:hover {
+        color: #000;
+    }
+
+    &__btn-row {
+        position: relative;
+    }
+
+    &__btn-row::after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 3px;
+        background-color: #292929;
+        top: 26px;
+        left: 22px;
+    }
+
+    &__btn-row:before {
+        content: '';
+        position: absolute;
+        border: 4.5px solid transparent;
+        border-right: 5px solid #292929;
+        position: absolute;
+        top: 23px;
+        left: 13px;
+    }
+
+    &__btn-rowright {
+        position: relative;
+    }
+
+    &__btn-rowright:after {
+        content: '';
+        position: absolute;
+        width: 12px;
+        height: 3px;
+        background-color: #292929;
+        top: 26px;
+        left: 19px;
+    }
+
+    &__btn-rowright::before {
+        content: '';
+        position: absolute;
+        border: 4.5px solid transparent;
+        border-left: 5px solid #292929;
+        position: absolute;
+        top: 23px;
+        left: 31px;
+    }
+
+
+}

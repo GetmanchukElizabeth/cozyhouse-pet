@@ -1,0 +1,38 @@
+.about {
+    background-color: $white-bg;
+    padding: 90px 0;
+
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img {
+        width: 300px;
+        height: 408px;
+    }
+
+    &__caption {
+        padding-right: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__descr {
+        line-height: 1.6;
+        font-family: $second-font;
+        letter-spacing: -0.2px;
+    }
+
+    &__descr-top {
+        margin-bottom: 25px;
+    }
+
+
+    &__item-right {
+        max-width: 420px;
+        margin-left: 125px;
+    }    
+
+}

@@ -1,0 +1,65 @@
+@@include("../blocks/modules/head/head.html", {
+    "title": "Template"
+})
+
+<style>
+    .row-template {
+        margin: 20px 0;
+    }
+</style>
+
+<div class="wrapper">
+    <div class="container">
+        <div class="row-template">
+            <input type="text" placeholder="Enter text">
+        </div>
+        <div class="row-template">
+            <label class="checkbox">
+                <input type="checkbox">
+                <span>checkbox</span>
+            </label>
+            <input type="checkbox">
+        </div>
+        <div class="row-template">
+            <label class="checkbox">
+                <input type="checkbox" checked>
+                <span>checkbox</span>
+            </label>
+            <input type="checkbox">
+        </div>
+        <div class="row-template">
+            <label class="radio">
+                <input type="radio" name="group" checked>
+                <span>radio 1</span>
+            </label>
+            <input type="checkbox">
+        </div>
+        <div class="row-template">
+            <label class="radio">
+                <input type="radio" name="group">
+                <span>radio 2</span>
+            </label>
+            <input type="checkbox">
+        </div>
+        <div class="select">
+            <select>
+                <option value="">Otion 1</option>
+                <option value="">Otion 2</option>
+                <option value="">Otion 3</option>
+            </select>
+        </div>
+        <div class="row-template">
+            <a href="#" class="btn">button</a>
+        </div>
+        <div class="row-template">
+            <button class="btn">button form</button>
+        </div>
+        <div class="row-template">
+            <button class="btn btn--border">button form</button>
+        </div>
+    </div>
+</div>
+
+
+@@include("../blocks/modules/foot/foot.html")
+        
