@@ -7,7 +7,6 @@
         height: calc(100vh - 170px);
         display: flex;
         align-items: center;
-        padding: 40px 0;
     }
 
     &__inner {
@@ -57,7 +56,8 @@
         &__caption {
             font-size: 28px;
             text-align: center;
-            margin: 28px auto;
+            margin-bottom: 28px;
+
         }
 
         &__btn {

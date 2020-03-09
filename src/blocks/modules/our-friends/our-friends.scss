@@ -11,8 +11,6 @@
 
     &__wrap {
         margin-bottom: 60px;
-        width: 1170px;
-        height: 430px;
         display: flex;
         align-items: center;
         justify-content: space-around;
@@ -27,52 +25,52 @@
         color: #000;
     }
 
-    &__btn-row {
+    &__btn-row a {
         position: relative;
     }
 
-    &__btn-row::after {
+    &__btn-row a::after {
         content: '';
         position: absolute;
         width: 12px;
         height: 3px;
         background-color: #292929;
-        top: 26px;
-        left: 22px;
+        top: 25px;
+        left: 21px;
     }
 
-    &__btn-row:before {
+    &__btn-row a:before {
         content: '';
         position: absolute;
         border: 4.5px solid transparent;
         border-right: 5px solid #292929;
         position: absolute;
-        top: 23px;
-        left: 13px;
+        top: 22px;
+        left: 12px;
     }
 
-    &__btn-rowright {
+    &__btn-rowright a {
         position: relative;
     }
 
-    &__btn-rowright:after {
+    &__btn-rowright a:after {
         content: '';
         position: absolute;
         width: 12px;
         height: 3px;
         background-color: #292929;
-        top: 26px;
-        left: 19px;
+        top: 25px;
+        left: 18px;
     }
 
-    &__btn-rowright::before {
+    &__btn-rowright a::before {
         content: '';
         position: absolute;
         border: 4.5px solid transparent;
         border-left: 5px solid #292929;
         position: absolute;
-        top: 23px;
-        left: 31px;
+        top: 22px;
+        left: 30px;
     }
 
 
