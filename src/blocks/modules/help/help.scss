@@ -1,0 +1,70 @@
+.help {
+    padding: 62px 0 0;
+    background-color: $white-bg;
+
+    .container {
+        @include b(mobile) {
+            padding: 0;
+        }
+    }
+
+    &__wrap {
+        width: 100%;
+        max-width: 1025px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .caption {
+        max-width: 318px;
+        text-align: center;
+        margin: 0 auto 73px;
+        @include b(mobile) {
+            font-size: 20px;
+        }
+    }
+
+    &__item {
+        width: 20%;
+        @include b(mobile) {
+            width: 28%;
+        }
+
+        svg {
+           height: 58px;
+           margin-bottom: 23px;
+        }
+    }
+
+    &__link {
+        font-size: 20px;
+        color: $main-color;
+        fill: $beige;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include trs;
+
+        &:hover {
+            color: $beige;
+            -webkit-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            transform: scale(1.1);
+        }
+    }
+
+    &__descr {
+        line-height: 1.2;
+        letter-spacing: 1.3px;
+        margin-bottom: 80px;
+        text-align: center;
+        @include b(mobile) {
+            font-size: 16px;
+        }
+        @include b(460) {
+            font-size: 10px;
+        }
+    }
+}

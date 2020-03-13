@@ -2,11 +2,17 @@
     min-height: 100vh;
     background-size: cover;
     background-position: 50% 50%;
+    @include b(mobile) {
+        background-position: 15% 50%;
+    }
 
     &__wrap {
         height: calc(100vh - 170px);
         display: flex;
         align-items: center;
+        @include b(mobile) {
+            max-height: calc(100vh + 30px);
+        }
     }
 
     &__inner {
@@ -21,6 +27,14 @@
         max-width: 360px;
         margin-bottom: 28px;
         letter-spacing: 2.6px;
+        @include b(mobile) {
+            font-size: 35px;
+        }
+        @include b(479) {
+            font-size: 28px;
+            text-align: center;
+            margin: 0 auto 28px;
+        }
     }
 
     &__descr {
@@ -28,45 +42,16 @@
         margin-bottom: 40px;
         font-family: $second-font;
         letter-spacing: -.2px;
+        @include b(479) {
+            text-align: center;
+        }
     }
 
     &__btn {
         width: 205px;
-    }
-}
-
-@media (max-width: 768px) {
-    .heading {
-        background-position: 15% 50%;
-
-        &__wrap {
-            min-height: calc(100vh + 30px);
-        }
-
-        &__caption {
-            font-size: 35px;
-        }
-
-    }
-}  
-
-@media (max-width: 479px) {
-    .heading {
-   
-        &__caption {
-            font-size: 28px;
-            text-align: center;
-            margin-bottom: 28px;
-
-        }
-
-        &__btn {
+        @include b(479) {
             display: block;
             margin: 0 auto;
         }
-
-        &__descr {
-            text-align: center;
-        }
-    }    
-}    
+    }
+}

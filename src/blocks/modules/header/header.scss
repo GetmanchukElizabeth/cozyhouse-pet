@@ -33,12 +33,36 @@
         letter-spacing: 0.1em;
     }
 
+    &__nav {
+        @include b(mobile) {
+            position: fixed;
+            background-color: $white;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 10;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            overflow: auto;
+        }
+    }
+
     &__nav-list {
         display: flex;
+        @include b(mobile) {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
     }
 
     &__nav-item {
         padding-left: 36px;
+        @include b(mobile) {
+            padding: 0 0 40px;
+        }
     }
 
     &__nav-item a {
@@ -46,6 +70,10 @@
         font-family: Arial;
         font-size: $main-fz;
         position: relative;
+        @include b(mobile) {
+            color: #000;
+            font-size: 28px;
+        }
     }
 
     &__nav-item a:before {
@@ -69,6 +97,11 @@
         width: 24px;
         height: 16px;
         position: relative;
+        @include b(mobile) {
+            display: block;
+            margin-right: 10px;
+            z-index: 11;
+        }
     }
 
     &__btn-menu span {
@@ -103,48 +136,4 @@
         transform: rotate(45deg);
         top: 5px;
     }
-}        
-
-@media (max-width: 768px) {
-    .header {
-        height: 170px;
-    
-
-        &__btn-menu {
-            display: block;
-            margin-right: 10px;
-            z-index: 11;
-
-        }
-
-        &__nav {
-            position: fixed;
-            background-color: $white;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            z-index: 10;
-            display: none;
-            align-items: center;
-            justify-content: center;
-            overflow: auto;
-        }
-
-        &__nav-item {
-            padding: 0 0 40px;
-        }    
-
-        &__nav-list {
-            display: flex;
-            flex-direction: column;
-            text-align: center;
-        }    
-
-        &__nav-item a {
-            color: #000;
-            font-size: 28px;
-        } 
-    }    
 }
-

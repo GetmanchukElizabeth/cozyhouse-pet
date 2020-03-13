@@ -1,14 +1,34 @@
 <div class="our-friends">
     <div class="container">
         <span class="caption our-friends__caption">Our friends who are looking for a house</span>
-        <div class="our-friends__wrap">
-            <div class="our-friends__btn-row">    
-                <a href="#" class="btn-row"></a>
+        <div class="our-friends__outer">
+            <div class="btnrow our-friends__btnrow--prev">    
+                <a href="#" class="btnrow--prev"></a>
             </div> 
-            <div class="our-friends__btn-rowright">    
-                <a href="#" class="btn-rowright"></a>
+            <div class="btnrow our-friends__btnrow--next">    
+                <a href="#" class="btnrow--next"></a>
             </div> 
-        </div>
+            <div class="our-friends__wrap">
+                <div class="our-friends__item">
+                    @@include("../animal/animal.html", {
+                        "img": "./img/pic/katrine.jpg",
+                        "name": "Katrine"
+                    })
+                </div>
+                <div class="our-friends__item">
+                    @@include("../animal/animal.html", {
+                        "img": "./img/pic/jennifer.jpg",
+                        "name": "Jennifer"
+                    })
+                </div>
+                <div class="our-friends__item">
+                    @@include("../animal/animal.html", {
+                        "img": "./img/pic/woody.jpg",
+                        "name": "Woody"
+                    })
+                </div>
+            </div>
+        </div>    
         <div class="our-friends__btn">
             <a href="#" class="btn">Get to know the rest</a>
         </div>
