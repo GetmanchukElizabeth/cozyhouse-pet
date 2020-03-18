@@ -1,0 +1,82 @@
+.header--white-bg {
+    background-color: $white;
+    max-height: 110px;
+     
+    .header{
+        max-height: 100px;
+
+        &__wrap {
+            height: 110px;
+        }
+
+        &__nav-item a {
+            color: $black;
+        }
+
+        &__logo-text {
+            color:$black; 
+        }
+    }
+}
+
+.pets {
+    padding: 60px 0;
+    background-color: #f6f6f6;
+    @include b(mobile) {
+        padding: 40px 0;
+    }
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .caption {
+        display: block;
+        max-width: 397px;
+        margin: 0 auto 70px;
+        text-align: center;
+        @include b(mobile) {
+            margin: 0 auto 30px;
+        }
+    }
+
+    &__wrap {
+        width: 100%;
+        max-width: 1170px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        @include b(mobile) {
+            
+        }
+    }
+
+    .our-friends__item {
+        width: 25%;
+        margin-bottom: 30px;
+        @include b(470) {
+            width: 100%;
+        }
+        @include b(mobile) {
+            width: 50%;
+        }
+    }
+
+    .pagination__list {
+        @include b(mobile) {
+            padding: 0 30px;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+}

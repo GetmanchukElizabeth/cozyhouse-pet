@@ -1,0 +1,214 @@
+.modal {
+    background-color: #fafafa;
+    position: fixed;
+    top: -100%;
+    left: 0;
+    z-index: 99;
+    overflow: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    @include trs;
+
+    &.active {
+        top: 0;
+
+        .caption {
+            animation-name: appearance;
+            animation-duration: 1.5s;
+        }
+
+        .modal {
+            
+            &__img {
+                animation-name: appearance;
+                animation-duration: 2s;
+            }
+
+            &__type {
+                animation-name: appearance;
+                animation-duration: 2s;
+            }
+
+            &__descr {
+                animation-name: appearance;
+                animation-duration: 2.5s;
+            }
+
+            &__list {
+                animation-name: appearance;
+                animation-duration: 3s;
+            }    
+        } 
+    }
+
+
+    &__wrap {
+        max-width: 1028px;
+        padding: 58px 58px 0 0;
+        position: relative;
+        margin-bottom: 15px;
+        max-height: 100%;
+        display: flex;
+        align-items: center;
+        @include b(tablet) {
+            padding: 0;
+        }
+    }
+
+    &__outer {
+        height: 100%;
+        padding: 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__close-btn {
+        width: 50px;
+        height: 50px;
+        border: 2px solid $beige;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        cursor: pointer;
+        @include trs;
+        @include b(tablet) {
+            top: 10px;
+            right: 10px;
+        }
+
+        &:hover {
+            background-color: $beige;
+        }
+    
+        &::before {
+            position: absolute;
+            content: '';
+            width: 14px;
+            height: 2px;
+            background-color: $black;
+            border-radius: 4px;
+            left: 16px;
+            top: 22px;
+            transform: rotate(-45deg);
+        }
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 14px;
+            height: 2px;
+            background-color: $black;
+            border-radius: 4px;
+            left: 16px;
+            top: 22px;
+            transform: rotate(45deg);
+        }
+    }
+
+    &__content {
+        box-shadow: 0px 2px 30px 5px rgba(13, 13, 13, .04);
+        background-color: #fafafa;
+        border-radius: 9px;
+        display: flex;
+        padding: 55px 40px;
+        @include b(mobile) {
+            display: block;
+        }
+        @include b(479) {
+           padding: 40px 15px; 
+        }
+    }
+
+    &__img {
+        width: 45%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 2s;
+        @include b(mobile) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    &__info {
+        width: 55%;
+        padding-left: 30px;
+        @include b(mobile) {
+            width: 100%;
+            padding-left: 0;
+            text-align: center;
+        }
+    }
+
+    .caption {
+        display: block;
+    }
+
+    &__type {
+        display: block;
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    &__descr {
+        line-height: 1.6;
+        font-family: $second-font;
+        margin-bottom: 20px;
+    }
+
+    &__item {
+        padding-left: 12px;
+        position: relative;
+        font-size: 17;
+
+        &::before{
+            position: absolute;
+            content: '';
+            left: 0;
+            top: 12px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: $beige;
+        }
+
+        span {
+            font-size: 15px;
+            font-family: $second-font;
+        }
+    }
+
+    &__list {
+        animation-name: appearance;
+        animation-duration: 2s;
+        @include b(mobile) {
+           text-align: left;
+        }
+    }
+
+    @keyframes appearance {
+        
+        0% {
+            transform: translateY(-20px);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0px);
+            opacity: 1;
+        }
+    }
+}

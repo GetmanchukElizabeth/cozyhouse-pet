@@ -36,20 +36,12 @@
         padding: 0 25px;
         @include b(tablet) {
             padding: 0 10px;
-        }
+        }        
         @include b(mobile) {
             width: 50%;
-
-            &:nth-child(3) {
-                display: none;
-            }
         }
         @include b(560) {
             width: 100%;
-
-            &:nth-child(2) {
-                display: none;
-            }
         }
     }
 
@@ -125,4 +117,5 @@
         top: -5px;
         left: 6px;
     }
-}
+}    
+
