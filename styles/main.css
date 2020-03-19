@@ -1637,6 +1637,10 @@ input:focus {
     width: 50%;
   }
 
+  .our-friends__item:nth-child(3) {
+    display: none;
+  }
+
   .help .container {
     padding: 0;
   }
@@ -1730,7 +1734,6 @@ input:focus {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 45px;
   }
 
   .footer__col {
@@ -1738,11 +1741,13 @@ input:focus {
     padding-top: 0;
     max-width: 300px;
     min-width: 300px;
+    margin-bottom: 35px;
   }
 
   .footer .caption {
     font-size: 30px;
     margin-bottom: 20px;
+    text-align: center;
   }
 
   .footer__link:hover {
@@ -1753,6 +1758,10 @@ input:focus {
 @media (max-width: 560px) {
   .our-friends__item {
     width: 100%;
+  }
+
+  .our-friends__item:nth-child(2) {
+    display: none;
   }
 }
 
@@ -1807,6 +1816,7 @@ input:focus {
     padding-left: 0;
     max-width: 250px;
     min-width: 250px;
+    margin-bottom: 20px;
   }
 }
 
