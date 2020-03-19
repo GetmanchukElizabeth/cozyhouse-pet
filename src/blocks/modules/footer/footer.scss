@@ -23,7 +23,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;  
-            margin-bottom: 45px;
         }
     }
 
@@ -36,11 +35,13 @@
             padding-top: 0;
             max-width: 300px;    
             min-width: 300px;
+            margin-bottom: 35px;
         }
         @include b(400) {
             padding-left: 0;
             max-width: 250px;    
             min-width: 250px;
+            margin-bottom: 20px;
         }
     }
 
@@ -54,6 +55,7 @@
         @include b(mobile) {
             font-size: 30px;
             margin-bottom: 20px; 
+            text-align: center;
         }
     }
 

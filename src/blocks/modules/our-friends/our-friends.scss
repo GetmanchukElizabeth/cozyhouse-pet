@@ -39,9 +39,17 @@
         }        
         @include b(mobile) {
             width: 50%;
+            
+            &:nth-child(3) {
+                display: none;
+            }
         }
         @include b(560) {
             width: 100%;
+            
+            &:nth-child(2) {
+                display: none;
+            }
         }
     }
 
