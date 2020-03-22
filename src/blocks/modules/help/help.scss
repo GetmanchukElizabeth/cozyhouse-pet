@@ -28,17 +28,7 @@
 
     &__item {
         width: 20%;
-        @include b(mobile) {
-            width: 28%;
-        }
-
-        svg {
-           height: 58px;
-           margin-bottom: 23px;
-        }
-    }
-
-    &__link {
+        margin-bottom: 80px;
         font-size: 20px;
         color: $main-color;
         fill: $beige;
@@ -52,13 +42,20 @@
             -webkit-transform: scale(1.1);
             -ms-transform: scale(1.1);
             transform: scale(1.1);
+        }    
+        @include b(mobile) {
+            width: 28%;
+        }
+
+        svg {
+           height: 58px;
+           margin-bottom: 23px;
         }
     }
 
     &__descr {
         line-height: 1.2;
         letter-spacing: 1.3px;
-        margin-bottom: 80px;
         text-align: center;
         @include b(mobile) {
             font-size: 16px;

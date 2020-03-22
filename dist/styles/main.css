@@ -780,7 +780,7 @@ input:focus {
 }
 
 .about__img {
-  width: 300px;
+  width: 100%;
   height: 408px;
 }
 
@@ -976,14 +976,7 @@ input:focus {
 
 .help__item {
   width: 20%;
-}
-
-.help__item svg {
-  height: 58px;
-  margin-bottom: 23px;
-}
-
-.help__link {
+  margin-bottom: 80px;
   font-size: 20px;
   color: #545454;
   fill: #f1cdb3;
@@ -993,17 +986,21 @@ input:focus {
   transition: all .3s;
 }
 
-.help__link:hover {
+.help__item:hover {
   color: #f1cdb3;
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
 }
 
+.help__item svg {
+  height: 58px;
+  margin-bottom: 23px;
+}
+
 .help__descr {
   line-height: 1.2;
   letter-spacing: 1.3px;
-  margin-bottom: 80px;
   text-align: center;
 }
 
@@ -1610,6 +1607,10 @@ input:focus {
     padding: 40px 0;
   }
 
+  .about .container {
+    padding: 0;
+  }
+
   .about__wrap {
     display: flex;
     flex-direction: column;
@@ -1627,6 +1628,8 @@ input:focus {
   .about__item-right {
     margin: 0 auto;
     text-align: center;
+    padding: 0 10px;
+    max-width: 100%;
   }
 
   .our-friends__caption {
